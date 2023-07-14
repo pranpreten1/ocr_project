@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>labelon_ocr</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+</head>
+<body class="sb-nav-fixed">
+    {% include 'header.html' %}
+    <div id="layoutSidenav">
+        {% include 'side.html' %}
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
